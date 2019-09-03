@@ -51,7 +51,7 @@
               <br />
               <br />
               <span
-                class="font-weight-light body-1"
+                class="font-weight-light"
               >フロントはNuxt.jsでSPAやPWAに対応しています。スマホでご覧の方はぜひ「ホーム画面に追加」をお試しください。</span>
               <br />
               <br />
