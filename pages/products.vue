@@ -3,7 +3,7 @@
     <section id="feature">
       <div class="wrapper">
         <div class="title-block">
-          <h1 class="font-weight-light display-3">Products</h1>
+          <h1 class="font-weight-light display-3">Product</h1>
         </div>
         <div class="two-column-wrapper">
           <div class="two-column-image">
@@ -84,100 +84,110 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 * {
   color: #333;
 }
 
-section .wrapper {
-  padding: 80px 10px;
-}
+section {
+  .wrapper {
+    padding: 80px 10px;
 
-section .title-block {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    .two-column-wrapper {
+      .two-column-desc {
+        ul {
+          margin-left: 1.5em;
+          li {
+            list-style: disc;
+          }
+        }
+      }
+    }
+  }
 
-section > .wrapper > .two-column-wrapper > .two-column-desc > ul > li {
-  list-style: disc;
-}
+  .title-block {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-section > .wrapper > .two-column-wrapper > .two-column-desc > ul {
-  margin-left: 1.5em;
+  .text {
+    padding-left: 1.5em;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .two-column-wrapper {
+    width: 80%;
+    margin: 0 auto 7.5vh auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .two-column-image {
+    width: 33%;
+  }
+
+  .two-column-image img {
+    border: 1px #000 solid;
+    margin: 0 auto;
+  }
+
+  .two-column-desc {
+    width: 62%;
+  }
+
+  .detail {
+    font-size: 16px;
+  }
 }
 
 p {
   line-height: 1.75em;
 }
 
-section .text {
-  padding-left: 1.5em;
-}
+#feature {
+  .two-column-image {
+    width: 48%;
+  }
 
-section .desc {
-  text-align: center;
-}
-
-.two-column-wrapper {
-  width: 80%;
-  margin: 0 auto 7.5vh auto;
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.two-column-image {
-  width: 33%;
-}
-
-.two-column-image img {
-  border: 1px #000 solid;
-  margin: 0 auto;
-}
-
-.two-column-desc {
-  width: 62%;
-}
-
-.detail {
-  font-size: 16px;
-}
-
-#feature .two-column-image {
-  width: 48%;
-}
-
-#feature .two-column-desc {
-  width: 48%;
+  .two-column-desc {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  section .wrapper {
-    padding: 80px 15px;
+  section {
+    .wrapper {
+      padding: 80px 15px;
+    }
+    .section-title-block {
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 32px;
+    }
   }
 
-  section .section-title-block {
-    margin-bottom: 10px;
-  }
+  #feature {
+    .two-column-wrapper {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
 
-  section .section-title {
-    font-size: 32px;
-  }
+    .two-column-image {
+      width: 90%;
+      margin: 0 auto 20px;
+    }
 
-  #feature .two-column-wrapper {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  #feature .two-column-image {
-    width: 90%;
-    margin: 0 auto 20px;
-  }
-
-  #feature .two-column-desc {
-    width: 100%;
+    .two-column-desc {
+      width: 100%;
+    }
   }
 }
 </style>
