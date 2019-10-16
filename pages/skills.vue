@@ -3,7 +3,7 @@
     <section id="skill">
       <div class="wrapper">
         <div class="title-block">
-          <h1 class="font-weight-light display-3">Skills</h1>
+          <h1 class="font-weight-light display-3">Skill</h1>
         </div>
         <v-app>
           <div class="card-wrapper">
@@ -104,6 +104,13 @@ export default {
           logo: mysql
         },
         {
+          name: "AWS",
+          text:
+            "参考書を使ってWebアプリのネットワークとサーバ構築を勉強しました。",
+          value: 2,
+          logo: aws
+        },
+        {
           name: "GCP",
           text:
             "『GCE』や『GKE』を参考書で体験。最近『Cloud Run』の勉強会に参加しました。",
@@ -116,13 +123,6 @@ export default {
             "授業内で『スタティックルーティング』や『ダイナミックルーティング』を設定し、通信の疎通確認をしました。",
           value: 1.5,
           logo: cisco
-        },
-        {
-          name: "AWS",
-          text:
-            "参考書を使ってWebアプリのネットワークとサーバ構築を勉強しました。",
-          value: 2,
-          logo: aws
         },
         {
           name: "Docker",
@@ -162,96 +162,100 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 * {
-  color: #333;
-}
-
-section .wrapper {
-  padding: 80px 10px;
-}
-
-section .title-block {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.title {
   color: #222;
 }
 
-section .desc {
-  text-align: center;
-}
-
-#skill .card-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#skill .card {
-  flex-basis: 46%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-#skill .card:first-child {
-  flex-basis: 100%;
-}
-
-#skill .skill-icon {
-  flex-basis: 75px;
-}
-
-#skill .skill-icon img {
-  width: 75px;
-}
-
-#skill .skill-desc {
-  flex-basis: calc(100% - 75px - 30px);
-}
-
-#skill .skill-desc-title {
-  margin-bottom: 3px;
-}
-
-@media screen and (max-width: 767px) {
-  .section .wrapper {
-    padding: 30px 15px;
+section {
+  .wrapper {
+    padding: 80px 10px;
   }
 
-  .section .title-block {
-    margin-bottom: 10px;
+  .title-block {
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  .section .title {
-    font-size: 32px;
+  .desc {
+    text-align: center;
+  }
+}
+
+#skill {
+  .card-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  #skill .card-wrapper {
-    width: 100%;
+  .card {
+    flex-basis: 46%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
-  #skill .card {
+  .card:first-child {
     flex-basis: 100%;
   }
 
-  #skill .skill-icon {
-    flex-basis: 45px;
+  .skill-icon {
+    flex-basis: 75px;
   }
 
-  #skill .skill-icon img {
-    width: 45px;
+  .skill-icon img {
+    width: 75px;
   }
 
-  #skill .skill-desc {
-    flex-basis: calc(100% - 45px - 20px);
+  .skill-desc {
+    flex-basis: calc(100% - 75px - 30px);
+  }
+
+  .skill-desc-title {
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    .wrapper {
+      padding: 30px 15px;
+    }
+
+    .title-block {
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 32px;
+    }
+  }
+
+  #skill {
+    .card-wrapper {
+      width: 100%;
+    }
+
+    .card {
+      flex-basis: 100%;
+    }
+
+    .skill-icon {
+      flex-basis: 45px;
+    }
+
+    .skill-icon img {
+      width: 45px;
+    }
+
+    .skill-desc {
+      flex-basis: calc(100% - 45px - 20px);
+    }
   }
 }
 </style>
