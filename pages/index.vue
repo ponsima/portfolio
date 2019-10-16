@@ -25,10 +25,20 @@ body {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
     "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
     "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  color: #333;
+  color: #222;
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: 0.8px;
+  animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 img,
@@ -45,6 +55,7 @@ ul,
 li {
   list-style: none;
 }
+
 /*--------------------------------
 　メイン画面
 ---------------------------------*/
@@ -95,13 +106,8 @@ li {
   letter-spacing: 0.1em;
   text-transform: lowercase;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
   justify-content: center;
 }
 
