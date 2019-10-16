@@ -1,28 +1,28 @@
 <template>
   <v-bottom-navigation grow fixed>
-    <v-btn to="/" height="56px" nuxt>
+    <v-btn to="/" height="btn_size" nuxt>
       <div>HOME</div>
-      <v-icon large>home</v-icon>
+      <v-icon :size="logo_size">home</v-icon>
     </v-btn>
 
-    <v-btn to="profile" height="56px">
+    <v-btn to="profile" height="btn_size">
       <div>Profile</div>
-      <v-icon large>account_circle</v-icon>
+      <v-icon :size="logo_size">account_circle</v-icon>
     </v-btn>
 
-    <v-btn to="skills" height="56px">
+    <v-btn to="skills" height="btn_size">
       <div>Skill</div>
-      <v-icon large>computer</v-icon>
+      <v-icon :size="logo_size">computer</v-icon>
     </v-btn>
 
-    <v-btn to="products" height="56px">
+    <v-btn to="products" height="btn_size">
       <div>Product</div>
-      <v-icon large>web</v-icon>
+      <v-icon :size="logo_size">web</v-icon>
     </v-btn>
 
-    <v-btn to="account" height="56px">
+    <v-btn to="account" height="btn_size">
       <div>Account</div>
-      <v-icon large>contact_mail</v-icon>
+      <v-icon :size="logo_size">contact_mail</v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>
@@ -32,7 +32,9 @@ export default {
   data() {
     return {
       bottomNav: "recent",
-      activeBtn: 1
+      activeBtn: 1,
+      btn_size: "56px",
+      logo_size: "40px"
     };
   }
 };
