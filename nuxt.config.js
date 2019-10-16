@@ -7,7 +7,9 @@ export default {
    */
   head: {
     titleTemplate: 'Shimada Masato - %s',
-    title: process.env.npm_package_name || '',
+    htmlAttrs: {
+      lang: 'ja'
+    },
     meta: [{
       charset: 'utf-8'
     },
@@ -59,6 +61,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    'nuxt-fontawesome',
   ],
   /*
    ** Axios module configuration
