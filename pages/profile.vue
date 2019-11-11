@@ -9,7 +9,7 @@
           <div class="two-column-image">
             <img src="~/assets/masato.png" alt="profile_image" />
             <p class="section-desc font-weight-light display-1">Shimada Masato</p>
-            <div class="hoge">
+            <div class="sns">
               <span class="sns-logo" v-for="logo in logos">
                 <a :href="logo.url" target="_blank">
                   <v-icon :size="size" :color="color">{{ logo.sns_name }}</v-icon>
@@ -95,11 +95,11 @@ section {
     padding-bottom: 0.5em;
   }
   .section-desc {
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
   }
 
-  .hoge {
+  .sns {
     .sns-logo {
       a {
         text-decoration: none;
@@ -173,6 +173,10 @@ section {
       line-height: 1;
       margin-bottom: 10px;
       color: #222;
+    }
+
+    .sns {
+      margin-bottom: 60px;
     }
   }
 
