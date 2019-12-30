@@ -131,32 +131,43 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  section .wrapper {
-    padding: 80px 10px;
+  section {
+    .wrapper {
+      padding: 80px 10px;
+    }
+
+    .title-block {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+
+    .mail {
+      padding-left: 0.5em;
+      font-size: 1em;
+    }
   }
-  section .title-block {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  section .text {
-    font-size: 14px;
-  }
-  section .mail {
-    padding-left: 0.5em;
-    font-size: 1em;
-  }
-  #contact .contact-list ul {
-    margin-top: 1.25em;
-    width: 100%;
-  }
-  #contact .contact-list li {
-    flex-basis: 30%;
-  }
-  #contact .contact-list li img {
-    width: 50px;
-  }
-  #contact .contact-list-desc {
-    font-size: 12px;
+  #contact {
+    .contact-list ul {
+      margin-top: 1.25em;
+      width: 100%;
+    }
+    .contact-list li {
+      flex-basis: 30%;
+    }
+
+    .contact-list-desc {
+      font-size: 12px;
+    }
+
+    .contact-list {
+      img {
+        width: 50px;
+      }
+    }
   }
 }
 </style>
