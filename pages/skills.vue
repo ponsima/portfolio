@@ -53,6 +53,7 @@ import kubernetes from "~/assets/logo/kubernetes.svg";
 import java from "~/assets/logo/java.svg";
 import c from "~/assets/logo/c.svg";
 import oracle from "~/assets/logo/oracle.svg";
+import terraform from "~/assets/logo/terraform.png";
 
 export default {
   data() {
@@ -76,6 +77,13 @@ export default {
             "2年次の作品制作で使用しました。初めてのフレームワークということもあり最初はとても苦労しましたが参考書やネットの記事で毎日勉強していました。",
           value: 3.5,
           logo: laravel
+        },
+        {
+          name: "Terraform(AWS)",
+          text:
+            "インフラのコード化に興味があり触っています。実際にVPCやEC2を立てながら勉強しています。",
+          value: 2,
+          logo: terraform
         },
         {
           name: "HTML/CSS",
@@ -224,7 +232,7 @@ section {
 @media screen and (max-width: 767px) {
   section {
     .wrapper {
-      padding: 30px 15px;
+      padding: 80px 15px;
     }
 
     .title-block {
