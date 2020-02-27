@@ -22,9 +22,8 @@
 }
 
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-    "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
-    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, \.SFNSDisplay-Regular,
+    "Noto Sans JP", sans-serif;
   color: #222;
   font-size: 15px;
   line-height: 1.8;
