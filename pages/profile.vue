@@ -22,7 +22,8 @@
               <v-icon :size="icon">mdi-human-child</v-icon>プロフィール
             </div>
             <p class="text">
-              &emsp;はじめまして。HAL東京 IT学部 高度情報学科を専攻している4年制3年の島田 雅人
+              &emsp;はじめまして。HAL東京 IT学部
+              高度情報学科を専攻している4年制3年の島田 雅人
               <a
                 href="https://twitter.com/masato13495"
                 rel="noopener"
@@ -33,7 +34,9 @@
               <br />&emsp;自分の知見を広めるため、勉強会にも積極的に参加し、最近では『AWSでWebサービスのインフラとネットワーク構築技術』,『FirebaseでTODOリストの実装』,『Wireshark&パケット解析』など様々な勉強会に出席しています。
             </p>
 
-            <h2 class="font-weight-thin headline">趣味</h2>
+            <h2 class="font-weight-thin headline">
+              <v-icon>mdi-gamepad-variant</v-icon>趣味
+            </h2>
             <p class="text">
               天気のいい日はポタリングをしたり、よく友人とタピオカを飲みに行きます。
               <br />ポタリングとは「散歩」程度に軽くサイクリングすることで、最近では根津神社やスカイツリーに行きました。
@@ -67,7 +70,6 @@
   </v-app>
 </template>
 
-
 <script>
 export default {
   data() {
@@ -94,23 +96,27 @@ export default {
 };
 </script>
 
-
 <style scoped lang="scss">
 * {
   color: #333;
 }
 
 section {
+  margin-bottom: 80px;
+
   .wrapper {
     padding: 80px 10px;
+
+    .title-block {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .display-3 {
+        font-weight: BLACK;
+      }
+    }
   }
-  .title-block {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .display-3 {
-    font-weight: BLACK;
-  }
+
   .headline {
     text-align: center;
     padding-bottom: 0.5em;
@@ -149,10 +155,10 @@ section {
 
   .two-column-image {
     width: 33%;
-  }
 
-  .two-column-image img {
-    margin: 0 auto;
+    img {
+      margin: 0 auto;
+    }
   }
 
   .two-column-desc {
@@ -161,8 +167,6 @@ section {
 }
 
 #profile {
-  margin-bottom: 80px;
-
   .two-column-image {
     width: 33%;
   }
