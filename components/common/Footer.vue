@@ -49,4 +49,10 @@ export default {
 .title {
   font-size: 1.5em;
 }
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 14px;
+  }
+}
 </style>
