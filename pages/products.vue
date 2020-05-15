@@ -31,7 +31,10 @@
               <li>サーバサイド</li>
               <p class="text">PHP(Laravel)</p>
               <li>ミドルウェア</li>
-              <p class="text">MySQL, Docker</p>
+              <p class="text">
+                MySQL
+                <br />Docker
+              </p>
             </ul>
 
             <p>『FLOVIS』とは：</p>
