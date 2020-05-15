@@ -4,11 +4,11 @@
       <h1 class="logo">
         <span class="logo-name">Shimada Masato</span>
         <span class="logo-title">MyPortfolio</span>
-        <span class="logo-desc">インフラエンジニア シマダマサト</span>
+        <span class="logo-desc">Webエンジニア シマダマサト</span>
       </h1>
     </header>
   </div>
-</template> 
+</template>
 
 <style>
 /* CSS Document */
